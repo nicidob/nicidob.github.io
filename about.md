@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+A web log, a blog. From a man who got off on the wrong stop and can't believe he was ever on a bus (or was it a train?) in the first place. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Full first name + middle initial + last name at gmail.com. 
