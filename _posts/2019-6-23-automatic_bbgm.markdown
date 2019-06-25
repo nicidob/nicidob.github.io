@@ -59,21 +59,22 @@ For the 2018-2019 season, my current configuration produced the top players as J
 [Alexnoob's rosters](https://github.com/alexnoob/BasketBall-GM-Rosters) are the best curated set in the BBGM community. We can compare his rosters against the automatic ones. X axis is a score alexnoob gave someone. Y axis is the automatic score. The plots are ordered/colored by how well they correlate with each other. This highlights where it's easy to score players (overall, rebounding, 3p%) and where it's hard (jmp, diq). 
 
 <p align="center">
-  <img src="images/p1.png">
+  <img src="/images/p1.png">
 </p>
 <p align="center">
-  <img src="images/p2.png">
+  <img src="/images/p2.png">
 </p>
 
 ## Analyzing the model
 So let's take a look at what the model uses to produce the 15 ratings for BasketBallGM. As is well known, height highly impacts a player's performance in BBGM. If you include it as an input feature, almost all scores will have a negative value for height. Why? Because extra height helps box score stats so all the other variables have to subtract a bonus for height first. For this analysis, ([Release 0.2](https://github.com/nicidob/bbgm/releases/tag/0.2) on GitHub), the input features were 'FG%', '3P%', 'FT%', 'AtRimFGP', 'LowPostFGP', 'MidRangeFGP', 'TS%','3PAr', 'FTr', 'ORB%', 'DRB%', 'TRB%', 'AST%', 'STL%', 'BLK%', 'TOV%', 'USG%', '+/-', 'MP', 'FGp36', 'FGAp36', '3Pp36', '3PAp36', 'FTp36','FTAp36', 'ORBp36', 'DRBp36', 'TRBp36', 'ASTp36', 'TOVp36', 'STLp36','Blkp36', 'PFp36', 'PTSp36', 'OWSp36', 'DWSp36', 'Creation', 'Load', 'cTOV', 'Age'. Some sensitivity analysis would be great here but I haven't done that yet. Remarkably, although I perform standard scaling before passing real data through the model, the unscaled NBA data looks very similiar to BBGM data. Well done [Jeremy](http://dumbmatter.com/)!
 <p align="center">
-  <img src="images/p3.png">
+  <img src="/images/p3.png">
 </p>
 
 Now we'll analyze the 5 largest coefficients to see how the latent variables in BBGM get expressed in performance. 
 
 ### Height
+
 | Variable | Coeff |
 |----------|-------|
 |PFp36                    |0.38|
@@ -85,6 +86,7 @@ Now we'll analyze the 5 largest coefficients to see how the latent variables in 
 The most important variable in BBGM. Predicted by fouls, blocks and rebounding. If fouls predict height, then our other variables will use fouling a surrogate for height, and try to remove the effect of height. Expect a lot of negative PFp36, BLK% and Blkp36 for the other statistics. 
 
 ### Strength
+
 | Variable | Coeff |
 |----------|-------|
 |MP                       |0.24|
@@ -96,6 +98,7 @@ The most important variable in BBGM. Predicted by fouls, blocks and rebounding. 
 Strong players play more minutes, with higher usage, low assist numbers
 
 ### Speed
+
 | Variable | Coeff |
 |----------|-------|
 |Blkp36                   |0.21|
@@ -107,6 +110,7 @@ Strong players play more minutes, with higher usage, low assist numbers
 Speedy players play a lot of minutes and aren't very old.
 
 ### Jumping
+
 | Variable | Coeff |
 |----------|-------|
 |Blkp36                   |0.29|
@@ -118,6 +122,7 @@ Speedy players play a lot of minutes and aren't very old.
 Players with good vertical are young and block well. 
 
 ### Endurance
+
 | Variable | Coeff |
 |----------|-------|
 |MP                       |0.40|
@@ -129,6 +134,7 @@ Players with good vertical are young and block well.
 Players with high endurance play a lot of minutes.
 
 ### Inside
+
 | Variable | Coeff |
 |----------|-------|
 |USG%                     |0.25|
@@ -138,6 +144,7 @@ Players with high endurance play a lot of minutes.
 |cTOV                     |0.16|
 
 ### Dunking
+
 | Variable | Coeff |
 |----------|-------|
 |Age                      |0.24|
@@ -149,6 +156,7 @@ Players with high endurance play a lot of minutes.
 Shooting a lot of free throws and not passing is indicative of being a dunker. 
 
 ### Free Throws
+
 | Variable | Coeff |
 |----------|-------|
 |FT%                      |0.61|
@@ -160,6 +168,7 @@ Shooting a lot of free throws and not passing is indicative of being a dunker.
 Free throw shooting is predicted by shooting a lot of free throws and playing a lot of minutes. 
 
 ### Two Pointers
+
 | Variable | Coeff |
 |----------|-------|
 |MidRangeFGP              |0.33|
@@ -171,6 +180,7 @@ Free throw shooting is predicted by shooting a lot of free throws and playing a 
 Shooting 2 pointers is predicted by midrange FG% and FT%. 
 
 ### Three Pointers
+
 | Variable | Coeff |
 |----------|-------|
 |3PAr                     |0.40|
@@ -183,6 +193,7 @@ Shooting 3 pointers is predicted what fraction of your shots are from 3, along w
 
 
 ### Offensive IQ
+
 | Variable | Coeff |
 |----------|-------|
 |OWSp36                   |0.22|
@@ -194,6 +205,7 @@ Shooting 3 pointers is predicted what fraction of your shots are from 3, along w
 Offensive Win Shares per 36 minutes and minutes played suggest a smart offensive player. 
 
 ### Defensive IQ
+
 | Variable | Coeff |
 |----------|-------|
 |STLp36                   |0.32|
@@ -205,6 +217,7 @@ Offensive Win Shares per 36 minutes and minutes played suggest a smart offensive
 Older players with good rebounding and a high number of steals are smart defensive players. 
 
 ### Dribbling
+
 | Variable | Coeff |
 |----------|-------|
 |ASTp36                   |0.28|
@@ -216,6 +229,7 @@ Older players with good rebounding and a high number of steals are smart defensi
 Players who dribble well tend to pass well and create shots for others. 
 
 ### Passing
+
 | Variable | Coeff |
 |----------|-------|
 |ASTp36                   |0.32|
@@ -227,6 +241,7 @@ Players who dribble well tend to pass well and create shots for others.
 Passing looks like dribbling. 
 
 ### Rebounding
+
 | Variable | Coeff |
 |----------|-------|
 |ORBp36                   |0.28|
@@ -243,6 +258,6 @@ For 2019, the following players had large drops in overall rating compared to Al
 ## Normalizing Rosters
 If you don't trust the automatic rosters, and really love [Alexnoob's](https://github.com/alexnoob/BasketBall-GM-Rosters) rosters, urge you to consider using normalized rosters. Normalization here just means -- shift the distribution of ratings so they match the natural distribution of ratings. You can see what the before (left, orange) and after (right, green) distributions look like for the 15 ratings, compare to the blue data from randomly generated BBGM seasons. I also include normalized rosters on my GitHub releases page, and the notebook `correct_base.ipynb` performs the correction. 
 <p align="center">
-  <img src="images/plot.png">
+  <img src="/images/plot.png">
 </p>
 Since this is just a scale and shift for each rating, the changes are monotonic. If AlexNoob gave someone a higher rebounding score than someone else, they'll still have a higher score in this corrected version. However, since this is done independently by category, it may change the overall scores. The automatically generated players from future seasons should also blendly smoothly with existing rosters, as they have similiar distributions. 
