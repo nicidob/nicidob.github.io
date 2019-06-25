@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automatically Generating NBA Rosters for BasketballGM (Draft)
+title: Automatically Generating NBA Rosters for BasketballGM
 ---
 [BasketballGM](https://basketball-gm.com/) is a remarkable, free, browser-based game. I decided to automatically generate roster files from real NBA data using some basic data science methods. The results are all on [this GitHub repo](https://github.com/nicidob/bbgm) and the roster files are [available here](https://github.com/nicidob/bbgm/releases)
 
