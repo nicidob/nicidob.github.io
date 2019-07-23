@@ -1,4 +1,6 @@
-# Automatic Rosters for BasketballGM
+---
+title: Automatic Rosters for BasketballGM
+---
 [BasketballGM](https://basketball-gm.com/) is a pretty awesome game. Some peoeple enjoy playing with real rosters filled with real people. I came up with a way to generate rosters based on box score data. [Write-up](https://nicidob.github.io/automatic_bbgm/) and [code](https://github.com/nicidob/bbgm) are available. This years are all "year ending", so 2019 means 2018-2019 season. These files can be downloaded or just copied and loaded directly from these URLs.
 
 There are NBA, WNBA and NCAA on this site. 
