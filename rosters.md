@@ -95,7 +95,9 @@ I use two different models here. A "simple" model using box-score data (1952 to 
 ## NBA All-Time-Great Era Teams
 In this version, with 2019 teams, each roster has the 10 highest rated players who played for that team. The year is "best player since that year". So the 2010 roster only has players since 2010. 
 [https://raw.githubusercontent.com/nicidob/bbgm/master/era_1960.json](https://raw.githubusercontent.com/nicidob/bbgm/master/era_1960.json)
-[https://raw.githubusercontent.com/nicidob/bbgm/master/era_1980.json](https://raw.githubusercontent.com/nicidob/bbgm/master/era_1980.json)[https://raw.githubusercontent.com/nicidob/bbgm/master/era_1990.json](https://raw.githubusercontent.com/nicidob/bbgm/master/era_1990.json)[https://raw.githubusercontent.com/nicidob/bbgm/master/era_2000.json](https://raw.githubusercontent.com/nicidob/bbgm/master/era_2000.json)
+[https://raw.githubusercontent.com/nicidob/bbgm/master/era_1980.json](https://raw.githubusercontent.com/nicidob/bbgm/master/era_1980.json)
+[https://raw.githubusercontent.com/nicidob/bbgm/master/era_1990.json](https://raw.githubusercontent.com/nicidob/bbgm/master/era_1990.json)
+[https://raw.githubusercontent.com/nicidob/bbgm/master/era_2000.json](https://raw.githubusercontent.com/nicidob/bbgm/master/era_2000.json)
 [https://raw.githubusercontent.com/nicidob/bbgm/master/era_2010.json](https://raw.githubusercontent.com/nicidob/bbgm/master/era_2010.json)
 
 ## WNBA
