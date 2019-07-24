@@ -12,6 +12,7 @@ There are NBA, WNBA and NCAA on this site.
 These have draft classes based on rookie performance data until 2019. I picked a few interesting years to generate. These require BBGM v2019.07.21.1313 or newer. 
 [https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1952.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1952.json)
 [https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1967.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1967.json)
+[https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1968.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1968.json)
 [https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1969.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1969.json)
 [https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1977.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1977.json)
 [https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1980.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1980.json)
