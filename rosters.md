@@ -15,6 +15,7 @@ These have draft classes based on rookie performance data until 2019. I picked a
 [https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1968.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1968.json)
 [https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1977.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1977.json)
 [https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1980.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1980.json)
+[https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1984.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1984.json)
 [https://raw.githubusercontent.com/nicidob/bbgm/master/mega_2005.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_2005.json)
 
 
