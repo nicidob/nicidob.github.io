@@ -16,8 +16,9 @@ These have draft classes based on rookie performance data until 2019. I picked a
 [https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1977.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1977.json)
 [https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1980.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1980.json)
 [https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1984.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1984.json)
+[https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1992.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_1992.json)
 [https://raw.githubusercontent.com/nicidob/bbgm/master/mega_2005.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_2005.json)
-
+[https://raw.githubusercontent.com/nicidob/bbgm/master/mega_2012.json](https://raw.githubusercontent.com/nicidob/bbgm/master/mega_2012.json)
 
 ## NBA
 I use two different models here. A "simple" model using box-score data (1952 to 1979), which lacks splits between ORB/ DRB is missing TOV/STL/BLK, etc. The 70s have some of this data but I don't use it. The 1980+ model has all that data.
