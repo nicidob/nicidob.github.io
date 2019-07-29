@@ -109,7 +109,7 @@ This is a giant file with all D1 Teams. But has logos, divisions, etc. [https://
 [https://raw.githubusercontent.com/nicidob/bbgm/master/cbb_roster_2018.json](https://raw.githubusercontent.com/nicidob/bbgm/master/cbb_roster_2019.json)
 
 ## Notes
-# Statistics
+### Statistics
 I use statistics from simulated BBGM seasons, then calibrated the data to have a half dozen guys in the 70s (7 in my 2018-2019 rosters ATM).
 
 In 250 auto-played seasons, I had 1500 player-year examples in the 70s (usually 6 guys). 85 examples in the 80s (one in every 3 years), and 7 examples in the 90s (3 times a century). 360, 18 and 2 players hit those marks (70, 80, 90). Using those numbers in the NBA dataset, we'd expect 90 guys who broke 70, 5 guys who broke 80, and 0.5 guys who broke 90. In all of my rosters, using players at their peaks, I have 103 who broke 70, 5 guys who broke 80, 0 guys who broke 90.
@@ -120,6 +120,6 @@ Now there is a quirk... [BBGM has more aggressive development curves than the re
 
 But to fix that last bit, I probably want a more wholistic rookie model that uses their career data, not just their rookie year data. And then somehow deconstructs the BBGM development data. But that'd lead to a lot of... MJ being a complete bust type of situation way too often.
 
-## Era adjustment
+### Era adjustment
 Players are all rated compared to league average in that season. And in some ways ... forecasted to BBGM/2019 basketball. So there's 3 point gods even in eras without much (or any) 3pters. All the rosters before 1980 also use a much simpler model (only using Total Rebounds, no Turnover, no steals, no 3pt data, etc.) so those ratings are more off at times.
 
